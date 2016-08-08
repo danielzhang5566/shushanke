@@ -46,7 +46,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	line-height: 3rem;
 }
 
@@ -267,7 +267,7 @@ img.avatar {
 }
 
 .site-header h2 {
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 }
 
 .nav-bar {
@@ -473,7 +473,7 @@ img.avatar {
 	animation-name: fadeInUp;
 }
 /*导航*/.site-header {
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0,0,0,.25);
 	animation: bgcolor 5s;
 	-moz-animation: bgcolor 5s;
 	-webkit-animation: bgcolor 5s;
@@ -1453,3 +1453,4 @@ h3#leavecomments {
 
 .time_base-l:hover .time-b-content a {
 	color: #6ec3c8;
+}

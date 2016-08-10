@@ -16,6 +16,7 @@ if (is_home() && ($option['if_bg_on']==1)):?>
         fade: 750,
         duration: 4000
     });
+    $(".text").css("max-width","600px");
 </script>
 <?php endif; ?>
 <?php if (is_category() && ($option['if_catbg']==1)):?>

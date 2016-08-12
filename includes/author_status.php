@@ -14,8 +14,9 @@
 	$github=get_the_author_meta( 'github', $userID );	
 	?>
 	<?php echo $user->display_name;?></h3>
+	<i class="fa fa-map-marker  fa-fw"></i>广州
 	<div class="author_icon">
-		<a href="http://mailto:<?php echo $my_email;?>" target="_blank" title="Email:<?php echo $my_email;?>" class="tooltip"><i class="fa fa-envelope fa-fw"></i></a>
+		<a href="mailto:<?php echo $my_email;?>" target="_blank" title="邮箱" class="tooltip"><i class="fa fa-envelope fa-fw"></i></a>
 		<?php if($url!=''):?>
 		<a target="_blank" href="<?php echo $url?>" class="tooltip" title="个人主页"><i class="fa fa-globe fa-fw"></i></a>
 		<?php endif;?>
@@ -26,7 +27,7 @@
 		<a target="_blank" href="<?php echo $sina?>" title="新浪微博" class="tooltip"><i class="fa fa-weibo fa-fw"></i></a>
 		<?php endif;?>
 		<?php if($twitter!=''):?>
-		<a target="_blank" href="<?php echo $twitter?>" title="Twitter" class="tooltip"><i class="fa fa-twitter fa-fw"></i></a>
+		<a target="_blank" href="<?php echo $twitter?>" title="Facebook" class="tooltip"><i class="fa fa-facebook-square fa-fw"></i></a>
 		<?php endif;?>
 		<?php if($google!=''):?>
 		<a target="_blank" href="<?php echo $google?>" title="G+" class="tooltip"><i class="fa fa-google-plus fa-fw"></i></a>
@@ -34,6 +35,10 @@
 		<?php if($github!=''):?>
 		<a target="_blank" href="<?php echo $github?>" title="Github" class="tooltip"><i class="fa fa-github fa-fw"></i></a>
 		<?php endif;?>
+
+		<?php if(false):?>
+        <a target="_blank" href="http://www.zeakhold.com/feed" title="订阅" class="tooltip"><i class="fa fa-rss fa-fw"></i></a>
+        <?php endif;?>
 
 	</div>
 	<?php echo get_the_author_meta( 'description', $userID );	?>

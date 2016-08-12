@@ -35,7 +35,7 @@ require_once('includes/author_status.php');
 	<?php $option=get_option('erlsimple_theme_options');?>
 	<?php if ($option['friendlink']==1):?>
     <aside class="widget">
-		<h3 class="widget-title"><i class="fa fa-users"></i>&nbsp;&nbsp;友情链接<em>/Links</em></h3>
+		<h3 class="widget-title"><i class="fa fa-link"></i>&nbsp;&nbsp;友情链接<em>/Links</em></h3>
         <div class="sider_list">
 			<?php
 			$bookmarks = get_bookmarks('title_li=&orderby=rand'); //全部链接随机输出
@@ -45,7 +45,8 @@ require_once('includes/author_status.php');
 				}
 			}
 			?>
-        <li><a href="/friendlinks" title="查看全部链接">查看更多&gt;&gt;</a></li></div>
+        <!--<li><a href="/friendlinks" title="查看全部链接">查看更多&gt;&gt;</a></li>-->
+        </div>
 	</aside>
 	<?php endif;?>
 </div>

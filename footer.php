@@ -1,9 +1,10 @@
 		<div class="clear"></div>
 		<a href="#" id="top" tilte="返回顶部"> <i class="fa fa-chevron-up fa-2x"> </i></a>
 		<footer class="site-footer">
-			<div class="site-info">
-				© 2012-2016 <a href="<?php echo home_url();?>"  id="copyright"><?php echo get_bloginfo('name');?></a>
-				<em>Theme by <a href="http://zhangshiyu.name" target="_blank">Erl</a></em>
+			<div class="site-info" style="line-height: 10px;">
+				Copyright © 2015-2016 <a href="<?php echo home_url();?>"  id="copyright"><?php echo get_bloginfo('name');?></a>
+				 | Theme by <a href="http://zhangshiyu.name" target="_blank">Erl</a>
+				<p style="font-size: 13px"><a target="_blank" href="http://www.beian.gov.cn">粤公网安备 44011302000438号</a></p>
 		</div> <!-- .site-info -->
         </footer>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>

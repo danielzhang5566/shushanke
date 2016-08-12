@@ -49,6 +49,8 @@ array( 1=> 'coffee',  23=>'paw', 505=>'headphones', 47=>'book', 485=>'plane'
 
                                               <?php endif; ?>    </div>
  <?php get_sidebar(); ?>
+ <div class="clear"></div>
+ <a href="#" id="top" tilte="返回顶部"> <i class="fa fa-chevron-up fa-2x"> </i></a>
  </div>
 
 <?php get_footer(); ?>

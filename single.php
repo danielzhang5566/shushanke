@@ -62,5 +62,7 @@ if ( has_post_thumbnail() ) :
         <?php endwhile; ?>
 <?php endif; ?> 
 </div>
+<div class="clear"></div>
+<a href="#" id="top" tilte="返回顶部"> <i class="fa fa-chevron-up fa-2x"> </i></a>
  </div>
 <?php get_footer(); ?>

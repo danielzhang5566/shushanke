@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>页面不存在 | 叶夕青兮</title>
+<title>页面不存在 | 蜀山客</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/font-awesome.min.css" />
+<link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+//<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/font-awesome.min.css" />
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/tooltipster.css" />
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
@@ -14,15 +15,15 @@
 				<dl style=" max-width:600px; margin-left:auto; margin-right:auto;"><dt style="float:left;"><img src="<?php bloginfo('template_url') ?>/images/404logo.png" id="logo" >
 </dt><dd>
 <span style="font-size:5rem; line-height:130px; margin-left:20px; color:#a6d7de; font-size:6rem;">404</span><br />
-<span style="font-size:1.5rem;">很抱歉，您查找的页面不存在！</span><br />
+<span style="font-size:1.5rem;">抱歉，您查找的页面不存在！</span><br />
 <em style="color:#cecbcb; font-size:1.2rem;">Page Not Found !</em><br />
-<a href="http://yexiqingxi.com/" style=" color:#333!important; text-shadow:none; font-size:0.8rem; text-decoration:underline;">&lt;&lt;返回叶夕青兮首页</a></dd></dl>
+<a href="http://www.zeakhold.com/" style=" color:#333!important; text-shadow:none; font-size:0.8rem;">&lt;&lt;返回蜀山客首页</a></dd></dl>
         </div><!-- /.site-header-inner -->
     </header>
     <div class="nav-bar">
         <div class="nav-bar-inner">
             <a href="/" class="logo">
-                <h1>叶夕青兮</h1>
+                <h1>蜀山客</h1>
             </a>
             
             <button class="toggle-menu tooltip" type="button" title="菜单">

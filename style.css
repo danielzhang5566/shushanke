@@ -662,6 +662,10 @@ article h2 {
     line-height: 1.4rem;
 }
 
+article h2 {
+    font-size: 1.2rem;
+}
+
 article img {
     max-width: 100%;
     margin: 0 auto;

@@ -1,5 +1,3 @@
-		<div class="clear"></div>
-		<a href="#" id="top" tilte="返回顶部"> <i class="fa fa-chevron-up fa-2x"> </i></a>
 		<footer class="site-footer">
 			<div class="site-info" style="line-height: 10px;">
 				Copyright © 2015-2016 <a href="<?php echo home_url();?>"  id="copyright"><?php echo get_bloginfo('name');?></a>

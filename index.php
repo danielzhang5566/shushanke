@@ -44,5 +44,7 @@ get_header();
 		</div>
 	</div>
 	<?php get_sidebar(); ?>
+	<div class="clear"></div>
+    <a href="#" id="top" tilte="返回顶部"> <i class="fa fa-chevron-up fa-2x"> </i></a>
 </div>
 <?php get_footer(); ?>

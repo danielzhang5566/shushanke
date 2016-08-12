@@ -28,8 +28,8 @@ get_header();
 <div class="container">
 	<div class="main">
 		<div class="content">
-				<div class="posts-inner">
-			<section class="posts">
+			<div class="posts-inner">
+			    <section class="posts">
 					<?php 
 					if (have_posts()) :
 						while (have_posts()) : the_post();
@@ -39,9 +39,10 @@ get_header();
 					else:?>
 					<h3 style="margin-top:45px; text-align:center"><i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;暂无文章发表！</h3>
 					<?php endif;?>
-				</div><!-- /.posts-inner -->
-			</section>
+			    </section>
+			</div><!-- /.posts-inner -->
 		</div>
-	<?php get_sidebar(); ?>
 	</div>
+	<?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>

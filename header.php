@@ -43,8 +43,8 @@
 				}
 				?>
 				
-				<form method="get" id="searchform" action="<?php bloginfo('url'); ?>" class="top_form"/>
-					<i class="fa fa-search searchpro"></i><input class="input-search-index" type="text" name="s" value="" placeholder="Search……" autocomplete="off">
+				<form method="get" id="searchform" action="<?php bloginfo('url'); ?>" class="top_form">
+					<i class="fa fa-search searchpro"></i><input class="input-search-index" type="text" name="s" value="" placeholder="Search……" autocomplete="off"/>
 				</form>
 				<button class="toggle-search tooltip" type="button" title="搜索">
 					<i class="fa fa-search"></i>

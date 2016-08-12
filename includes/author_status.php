@@ -36,7 +36,7 @@
 		<a target="_blank" href="<?php echo $github?>" title="Github" class="tooltip"><i class="fa fa-github fa-fw"></i></a>
 		<?php endif;?>
 
-		<?php if(false):?>
+		<?php if(true):?>
         <a target="_blank" href="http://www.zeakhold.com/feed" title="订阅" class="tooltip"><i class="fa fa-rss fa-fw"></i></a>
         <?php endif;?>
 

@@ -27,7 +27,6 @@ article, aside, figure, footer, header, hgroup, menu, nav, section {
 
 body {
     margin: 0;
-    background: url("http://www.zeakhold.com/wp-content/uploads/2016/08/ink-after-after.jpg") no-repeat -999px -999px;
 }
 
 h1, h2, h3 {
@@ -655,7 +654,12 @@ article p a:hover {
 }
 
 article h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+}
+
+article h2 {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
 }
 
 article img {

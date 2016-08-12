@@ -10,7 +10,7 @@
 	</h1>
 	<?php else :?>
 	<a href="<?php the_permalink() ?>" rel="bookmark" itemprop="url">
-		<h1 itemprop="name" style="font-size:1.5rem;"><?php the_title(); ?></h1>
+		<h1 itemprop="name"><?php the_title(); ?></h1>
 	</a>
 	<?php endif;?>
 	<?php the_content("继续阅读→"); ?> 

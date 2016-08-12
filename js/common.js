@@ -70,8 +70,8 @@ $("#top").click(function () {
 });
 //边栏状态更新
 $(document).ready(function () {
-    if($('.author_status_inner') != null) {
-        var c = $('.author_status_inner');
+    var c = $('.author_status_inner')
+    if (c[0]) {
         var a = c.children().length;
         setInterval(function () {
             t = c.position().top;

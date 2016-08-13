@@ -29,6 +29,23 @@
             <button class="toggle-menu tooltip" type="button" title="菜单">
                 <i class="fa fa-bars"></i>
             </button>
+            <?php
+				$option=get_option('erlsimple_theme_options');
+				if($option['logoimg']){?>
+				<style>
+				.logo-s{
+					background-image: url(<?php echo $option['logoimg'];?>);
+					background-repeat: no-repeat;
+					background-position: center center;
+					width: 160px;
+					text-indent: -9999px;
+					display: block;
+				}
+				</style>
+				<?php }
+				?>
+
+				<a href="<?php echo home_url();?>" class="logo-s"><?php echo get_bloginfo('name');?></a>
  <?php
 if(function_exists('wp_nav_menu')) {
     wp_nav_menu(array('theme_location'=>'primary','menu_class'=>'menu','container'=>'ul'));

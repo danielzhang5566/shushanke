@@ -992,15 +992,16 @@ a.comment-edit-link {
     -moz-border-radius: 50%;
     border-radius: 50%;
     background: #fff;
-    -webkit-transition: .8s;
-    -webkit-transition: -webkit-transform .8s ease-out;
-    -moz-transition: -moz-transform .8s ease-out;
-    transition: transform .8s ease-out;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -ms-transition: .4s ease-in-out;
+    transition:.4s ease-in-out;
 }
 
-.avatar:hover {
+.comment-main:hover .avatar{
     -webkit-transform: rotateZ(360deg);
     -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
     transform: rotateZ(360deg);
 }
 

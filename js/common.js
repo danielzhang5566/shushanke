@@ -85,3 +85,7 @@ $(document).ready(function () {
     }
 });
 $('.menu-item-has-children>a').append('&nbsp;&nbsp;<i class="fa fa-caret-down"></i>');
+
+document.addEventListener('visibilitychange', function() {
+    document.title = document.hidden ? "看这里，看这里!": "蜀山客";
+},false);

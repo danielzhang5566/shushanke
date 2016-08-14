@@ -17,7 +17,7 @@
 <div id="respond_box">
 	<div id="respond">
 		<div class="cancel-comment-reply">
-			<small><?php cancel_comment_reply_link(); ?></small>
+			<small><?php cancel_comment_reply_link('点击这里取消回复.'); ?></small>
 		</div>
 		<?php if ( get_option('comment_registration') && !$user_ID ) : ?>
 		<p><?php print '您必须'; ?><a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php echo urlencode(get_permalink()); ?>"> [ 登录 ] </a>才能发表留言！</p>

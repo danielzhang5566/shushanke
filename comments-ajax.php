@@ -70,13 +70,13 @@ $comment_type = '';
 
 if ( get_option('require_name_email') && !$user->ID ) {
 	if ( 6 > strlen($comment_author_email) || '' == $comment_author )
-        err( __('Error: please fill the required fields (name, email).')); // 將 wp_die 改為錯誤提示
+        err( __('评论失败：请输入昵称及邮箱地址！')); // 將 wp_die 改為錯誤提示
 	elseif ( !is_email($comment_author_email))
-        err(__('Error: please enter a valid email address.')); // 將 wp_die 改為錯誤提示
+        err(__('评论失败：请输入正确地邮箱地址！')); // 將 wp_die 改為錯誤提示
 }
 
 if ( '' == $comment_content )
-    err(__('Error: please type a comment.')); // 將 wp_die 改為錯誤提示
+    err(__('评论失败：请输入内容！')); // 將 wp_die 改為錯誤提示
 
 // 增加: 錯誤提示功能
 function err($ErrMsg) {
@@ -90,9 +90,9 @@ $dupe = "SELECT comment_ID FROM $wpdb->comments WHERE comment_post_ID = '$commen
 if ( $comment_author_email ) $dupe .= "OR comment_author_email = '$comment_author_email' ";
 $dupe .= ") AND comment_content = '$comment_content' LIMIT 1";
 if ( $wpdb->get_var($dupe) ) {
-    err(__('Duplicate comment detected; it looks as though you&#8217;ve already said that!'));
+    err(__('评论失败：您好像已经发表过同样的评论了！'));
 }
-// 增加: 檢查評論太快功能
+//增加: 檢查評論太快功能
 if ( $lasttime = $wpdb->get_var( $wpdb->prepare("SELECT comment_date_gmt FROM $wpdb->comments WHERE comment_author = %s ORDER BY comment_date DESC LIMIT 1", $comment_author) ) ) { 
 $time_lastcomment = mysql2date('U', $lasttime, false);
 $time_newcomment  = mysql2date('U', current_time('mysql', 1), false);

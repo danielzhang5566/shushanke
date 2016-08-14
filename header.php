@@ -40,7 +40,7 @@
 					<span><?php echo get_bloginfo('name');?></span>
 				</a>
 				
-				<button class="toggle-menu tooltip" type="button" title="菜单">
+				<button class="toggle-menu tooltip" type="button">
 					<i class="fa fa-bars"></i>
 				</button>
 				<?php 

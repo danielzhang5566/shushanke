@@ -88,4 +88,4 @@ $('.menu-item-has-children>a').append('&nbsp;&nbsp;<i class="fa fa-caret-down"><
 
 document.addEventListener('visibilitychange', function() {
     document.title = document.hidden ? "看这里，看这里!": "蜀山客";
-},false);
+});

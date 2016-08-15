@@ -6,18 +6,15 @@
 		</div> <!-- .site-info -->
         </footer>
         <script src="http://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
-        <!-- /* <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script> */ -->
-
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/comments-ajax.js"></script>
-
 		<script src="http://cdn.bootcss.com/tooltipster/3.2.6/js/jquery.tooltipster.min.js"></script>
-        <!-- /* <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.tooltipster.min.js"></script> */ -->
-
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/common.js"></script>
 
+
+		<?php
 		/* 如果是网站首页、分类页面、独立页面时（蜀山客的这三类页面都设置为【有背景图】）*/
-		/* 也就是有【有背景图】的情况下 */
-		<?php if (is_home() || is_category() ||is_page()):?>
+        		/* 也就是有【有背景图】的情况下 */
+		if (is_home() || is_category() ||is_page()):?>
 			<script src="<?php bloginfo('template_directory'); ?>/js/jquery.backstretch.min.js"></script>
 			<script type="text/javascript">
             		    //向下滚动时显示顶部导航栏
@@ -41,8 +38,10 @@
 			<?php include('includes/bgbanner.php'); ?>
 		<?php endif;?>
 
+
+		<?php
 		/* 如果是非文章、非独立页面时（例如首页，分类页面、搜索页面、标签页面等） */
-		<?php if (!(is_single()) && !(is_page())):?>
+		if (!(is_single()) && !(is_page())):?>
             <script type="text/javascript">
                 $(".text").css("max-width","600px");
                 $("article h1").css("color","#4093b4");
@@ -56,33 +55,6 @@
             </script>
         <?php endif;?>
 
-/*
-		// 如果是 开启了背景图的首页 \\ 开启了背景图的分类页面 \\ 独立页面（也设定了背景图）
-		// 也就是所有【有背景图】的情况下
-		<?php
-		$option=get_option('erlsimple_theme_options');
-		if ((is_home() && ($option['if_bg_on']==1)) || is_category()&&($option['if_catbg']) || is_page()):?>
-		    <script type="text/javascript">
-		    //向下滚动时显示顶部导航栏
-            $(window).scroll(function(){
-            	if($(window).scrollTop() > 10){
-            		$('.nav-bar').fadeIn();
-            	}else{
-            		$('.nav-bar').fadeOut();
-            	};
-            });
-            //鼠标滚动滑动到最顶部时
-            if($(window).scrollTop()==0){
-            	$(window).one('scroll',function(){
-            		h=$('header.site-header').height();
-            		$('html,body').animate({
-            			scrollTop: h
-            		}, 800);
-            	})
-            }
-		    </script>
-		<?php endif;?>
-*/
 		<?php wp_footer();?>
 	</body>
 </html>

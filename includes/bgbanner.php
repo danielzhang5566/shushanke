@@ -1,6 +1,6 @@
- /* 如果是首页并且开启了背景图 */
 <?php
- $option=get_option('erlsimple_theme_options');
+ /* 如果是首页并且开启了背景图 */
+$option=get_option('erlsimple_theme_options');
 if (is_home() && ($option['if_bg_on']==1)):?>
 <script>
     $.backstretch([
@@ -20,8 +20,10 @@ if (is_home() && ($option['if_bg_on']==1)):?>
 </script>
 <?php endif; ?>
 
- /* 如果是分类并且开启了背景图 */
-<?php if (is_category() && ($option['if_catbg']==1)):?>
+
+<?php
+/* 如果是分类并且开启了背景图 */
+if (is_category() && ($option['if_catbg']==1)):?>
 <script>
     $(".site-header").backstretch([
       "<?php bloginfo('template_url') ?>/images/<?php $cat = get_query_var('cat');
@@ -35,8 +37,10 @@ if (is_home() && ($option['if_bg_on']==1)):?>
 <?php endif;?>
 
 
+
+<?php
  /* 如果是独立页面(认定为也有背景图) */
-<?php if (is_page()):?>
+if (is_page()):?>
 <script>
     $(".site-header").backstretch([
       "<?php 

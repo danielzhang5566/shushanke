@@ -8,7 +8,10 @@
    <?php while (have_posts()) : the_post(); ?>
       <?php 
 if ( has_post_thumbnail() ) : 
-	?> 
+	?>
+	<style>
+        .nav-bar{ display:none;}
+    </style>
         <header class="site-header" style=" height:30%;">
         <div class="site-header-inner" style="  
 animation: bgcolor 5s;

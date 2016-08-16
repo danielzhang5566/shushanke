@@ -17,24 +17,22 @@
 		if (is_home() || is_category() || is_page()):?>
 			<script src="<?php bloginfo('template_directory'); ?>/js/jquery.backstretch.min.js"></script>
 			<script type="text/javascript">
-            		    //向下滚动时显示顶部导航栏
-                        $(window).scroll(function(){
-                        	if($(window).scrollTop() > 10){
-                        		$('.nav-bar').fadeIn();
-                        	}else{
-                        		$('.nav-bar').fadeOut();
-                        	};
-                        });
-                        //鼠标滚动滑动到最顶部时
-                        if($(window).scrollTop()==0){
-                        	$(window).one('scroll',function(){
-                        		h=$('header.site-header').height();
-                        		$('html,body').animate({
-                        			scrollTop: h
-                        		}, 800);
-                        	})
-                        }
-            		    </script>
+                $(window).scroll(function(){
+                	if($(window).scrollTop() > 10){
+                		$('.nav-bar').fadeIn();
+                	}else{
+                		$('.nav-bar').fadeOut();
+                	};
+                });
+                if($(window).scrollTop()==0){
+                	$(window).one('scroll',function(){
+                		h=$('header.site-header').height();
+                		$('html,body').animate({
+                			scrollTop: h
+                		}, 800);
+                	})
+                }
+            </script>
 			<?php include('includes/bgbanner.php'); ?>
 		<?php endif;?>
 

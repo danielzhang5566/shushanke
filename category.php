@@ -5,7 +5,7 @@
  if($option['if_catbg']==1):
  ?>
 <style>
-.nav-bar{ display:none;}
+    .nav-bar{ display:none;}
 </style>
 <header class="site-header" style=" height:50%;">
 <div class="site-header-inner" style="  

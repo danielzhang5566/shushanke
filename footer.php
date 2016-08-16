@@ -15,7 +15,7 @@
 		/* 如果是网站首页、分类页面、独立页面时（蜀山客的这三类页面都设置为【有背景图】）*/
         /* 也就是有【有背景图】的情况下 */
         /* 146对应独立页面【关于】的ID，如果还有其它独立页面，要另外添加ID */
-		if (is_home() || is_category() ||is_page(146)):?>
+		if (is_front_page() || is_category() || is_page(146)):?>
 			<script src="<?php bloginfo('template_directory'); ?>/js/jquery.backstretch.min.js"></script>
 			<script type="text/javascript">
             		    //向下滚动时显示顶部导航栏

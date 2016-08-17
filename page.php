@@ -7,18 +7,18 @@ if ( has_post_thumbnail() ) :
 <style>
 .nav-bar{ display:none;}
 </style>
-        <header class="site-header" style=" height:30%;">
-        <div class="site-header-inner" style="  
-animation: bgcolor 5s;
--moz-animation: bgcolor 5s;
--webkit-animation: bgcolor 5s;	
--o-animation: bgcolor 5s;	
-background-color: rgba(0,0,0,0.3);">
-<h1 style=" color:#fff;" class="animated fadeInDown"><?php the_title(); ?></h1>
-        </div><!-- /.site-header-inner -->
-    </header>
-	<?php endif;?>
-  <div class="main">
+<header class="site-header" style=" height:30%;">
+    <div class="site-header-inner" style="
+        animation: bgcolor 5s;
+        -moz-animation: bgcolor 5s;
+        -webkit-animation: bgcolor 5s;
+        -o-animation: bgcolor 5s;
+        background-color: rgba(0,0,0,0.15);">
+        <h1 style=" color:#fff;" class="animated fadeInDown"><?php the_title(); ?></h1>
+    </div><!-- /.site-header-inner -->
+</header>
+<?php endif;?>
+<div class="main">
  <div class="content-widescreen">
              <div class="crumbs_patch" 
 			 <?php if(has_post_thumbnail()):?>

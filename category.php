@@ -8,15 +8,15 @@
     .nav-bar{ display:none;}
 </style>
 <header class="site-header" style=" height:50%;">
-<div class="site-header-inner" style="  
-animation: bgcolor 5s;
--moz-animation: bgcolor 5s;
--webkit-animation: bgcolor 5s;	
--o-animation: bgcolor 5s;	
-background-color: rgba(0,0,0,0.3);">
-<h1 style=" color:#fff;" class="animated fadeInDown"><i style=" margin-right:15px;" class="fa fa-bars"></i><?php single_cat_title();?></h1>
-	<h2 class="animated fadeInUp"><?php echo category_description();?></h2>
-</div><!-- /.site-header-inner -->
+    <div class="site-header-inner" style="
+        animation: bgcolor 5s;
+        -moz-animation: bgcolor 5s;
+        -webkit-animation: bgcolor 5s;
+        -o-animation: bgcolor 5s;
+        background-color: rgba(0,0,0,0.1);">
+        <h1 style=" color:#fff;" class="animated fadeInDown"><i style=" margin-right:15px;" class="fa fa-bars"></i><?php single_cat_title();?></h1>
+        <h2 class="animated fadeInUp"><?php echo category_description();?></h2>
+    </div><!-- /.site-header-inner -->
 </header>
 <?php endif;?>
   <div class="main">

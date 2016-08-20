@@ -1,3 +1,9 @@
+        <?php
+        /* 如果是【关于】页面，则在底部添加乌龟部件 */
+        if (is_page(146)):?>
+            <object type="application/x-shockwave-flash" style="margin: 5px auto;outline:none;display: block;" data="http://www.zeakhold.com/data/turtle.swf?up_turtle5HeadColor=828250&amp;up_turtle5ShellColor=828250&amp;up_waterColor=FFFFFF&amp;up_turtle3LegColor=66663f&amp;up_turtle4ShellColor=828250&amp;up_turtle2HeadColor=828250&amp;up_percentWater=1&amp;up_turtle3HeadColor=828250&amp;up_turtle1ShellColor=828250&amp;up_foodColor=D1BB19&amp;up_turtle4HeadColor=828250&amp;up_turtle3ShellColor=828250&amp;up_turtle1HeadColor=828250&amp;up_turtle4LegColor=66663f&amp;up_turtle1LegColor=66663f&amp;up_numTurtles=2&amp;up_turtleName=Turtle&amp;up_groundColor=EEEEEE&amp;up_turtle2ShellColor=828250&amp;up_turtle2LegColor=66663f&amp;up_turtle5LegColor=66663f&amp;" width="700" height="300"><param name="movie" value="http://www.zeakhold.com/data/turtle.swf?up_turtle5HeadColor=828250&amp;up_turtle5ShellColor=828250&amp;up_waterColor=FFFFFF&amp;up_turtle3LegColor=66663f&amp;up_turtle4ShellColor=828250&amp;up_turtle2HeadColor=828250&amp;up_percentWater=1&amp;up_turtle3HeadColor=828250&amp;up_turtle1ShellColor=828250&amp;up_foodColor=D1BB19&amp;up_turtle4HeadColor=828250&amp;up_turtle3ShellColor=828250&amp;up_turtle1HeadColor=828250&amp;up_turtle4LegColor=66663f&amp;up_turtle1LegColor=66663f&amp;up_numTurtles=2&amp;up_turtleName=Turtle&amp;up_groundColor=EEEEEE&amp;up_turtle2ShellColor=828250&amp;up_turtle2LegColor=66663f&amp;up_turtle5LegColor=66663f&amp;"><param name="AllowScriptAccess" value="always"><param name="wmode" value="opaque"><param name="scale" value="noscale"><param name="salign" value="tl"></object>
+        <?php endif;?>
+
 		<footer class="site-footer">
 			<div class="site-info" style="line-height: 10px;">
 				Copyright © 2015-2016 <a href="<?php echo home_url();?>"  id="copyright"><?php echo get_bloginfo('name');?></a>

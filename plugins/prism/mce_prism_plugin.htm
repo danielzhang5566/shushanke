@@ -1,0 +1,32 @@
+<script>
+function InsertValue() {
+    codeNode = document.getElementById('code')
+    code = codeNode.value;
+    if (code == '') {
+        codeNode.focus();
+        return;
+    }
+    objLang = document.getElementById('lang');
+    lang = objLang.value;
+    document.cookie = unescape("codeValue=" + (objLang.selectedIndex + 1));
+    code = code.replace(/</g, "<").replace(/>/g, ">");
+    str = '<pre><code class="language-'+ lang +'">\n';
+    str += code;
+    str += "\n</code></pre>";
+    window.parent.tinyMCE.activeEditor.execCommand('mceInsertContent', 0, str); //获取内容并插入到编辑器
+    window.parent.tinyMCE.activeEditor.windowManager.close(); //关闭对话框
+}
+</script>
+
+<form>
+    <div class="codeArea">
+        <label for="lang">代码语言</label>
+        <select id="lang">
+            <option selected="selected" value="javascript">>javascript</option>
+            <option selected="selected" value="markup">>Markup</option>
+            <option selected="selected" value="css">>CSS</option>
+            <option selected="selected" value="clike">>clike</option>
+        </select>
+        <textarea id="code" autofocus=""></textarea>
+        <input type="submit" value="插入"/></div>
+</form>

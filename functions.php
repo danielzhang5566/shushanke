@@ -450,30 +450,4 @@ if($option['if_status']==1){
 	require_once('includes/post_type_status.php');
 }
 
-/*** 二次开发代码开始 ***/
-
-/* 代码高亮——集成prism */
-function spces_code_plugin() {
-   if ( ! current_user_can('edit_posts') && ! current_user_can('edit_pages') ) {
-      return;
-   }
-
-   if ( get_user_option('rich_editing') == 'true' ) {
-      add_filter( 'mce_external_plugins', 'specs_mce_external_plugins_filter' );
-      add_filter( 'mce_buttons', 'specs_mce_buttons_filter' );
-   }
-
-}
-add_action('admin_head', 'spces_code_plugin');
-function specs_mce_external_plugins_filter($plugin_array) {
-    $plugin_array['specs_code_plugin'] = get_template_directory_uri() . '/plugins/prism/mce_prism_plugin.js';
-
-    return $plugin_array;
-}
-function specs_mce_buttons_filter($buttons) {
-    array_push($buttons, 'specs_code_plugin');
-
-    return $buttons;
-}
-
 ?>

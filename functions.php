@@ -451,6 +451,7 @@ if($option['if_status']==1){
 }
 
 /*** 二次开发 ***/
+
 //关闭提示&禁止更新
 add_filter('pre_site_transient_update_core', create_function('$a', "return null;")); // 关闭核心提示
 add_filter('pre_site_transient_update_plugins', create_function('$a', "return null;")); // 关闭插件提示
@@ -458,5 +459,28 @@ add_filter('pre_site_transient_update_themes', create_function('$a', "return nul
 remove_action('admin_init', '_maybe_update_core'); // 禁止 WordPress 检查更新
 remove_action('admin_init', '_maybe_update_plugins'); // 禁止 WordPress 更新插件
 remove_action('admin_init', '_maybe_update_themes'); // 禁止 WordPress 更新主题
+
+//七牛镜像存储
+if ( !is_admin() ) {
+    add_action('wp_loaded','qiniu_ob_start');
+    function qiniu_ob_start() {
+        ob_start('qiniu_cdn_replace');
+    }
+    function qiniu_cdn_replace($html){
+        $local_host = 'http://www.zeakhold.com'; //博客域名
+        $qiniu_host = 'http://source.zeakhold.com'; //七牛域名
+        $cdn_exts   = 'js|css|png|jpg|jpeg|gif|ico'; //扩展名（使用|分隔）
+        $cdn_dirs   = 'wp-content|wp-includes'; //目录（使用|分隔）
+        $cdn_dirs   = str_replace('-', '\-', $cdn_dirs);
+        if ($cdn_dirs) {
+            $regex  =  '/' . str_replace('/', '\/', $local_host) . '\/((' . $cdn_dirs . ')\/[^\s\?\\\'\"\;\>\<]{1,}.(' . $cdn_exts . '))([\"\\\'\s\?]{1})/';
+            $html =  preg_replace($regex, $qiniu_host . '/$1$4', $html);
+        } else {
+            $regex  = '/' . str_replace('/', '\/', $local_host) . '\/([^\s\?\\\'\"\;\>\<]{1,}.(' . $cdn_exts . '))([\"\\\'\s\?]{1})/';
+            $html =  preg_replace($regex, $qiniu_host . '/$1$3', $html);
+        }
+        return $html;
+    }
+}
 
 ?>

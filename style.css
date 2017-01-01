@@ -107,7 +107,7 @@ dd {
 
 blockquote {
     padding-left: 1rem;
-    border-left: 3px solid #ddd;
+    border-left: 3px solid rgba(164, 223, 250, 0.51);
 }
 
 address {
@@ -570,6 +570,7 @@ i.fa-caret-down {
     background-color: transparent;
     font-size: 14px;
     line-height: 28px;
+    outline: none;
 }
 
 .searchpro {
@@ -1537,5 +1538,5 @@ body::-webkit-scrollbar-thumb
 /*定义滑块 hover变色*/
 body::-webkit-scrollbar-thumb:hover
 {
-    background-color: #6ec3c8;
+    background-color: #795548;
 }

@@ -87,5 +87,5 @@ $(document).ready(function () {
 $('.menu-item-has-children>a').append('&nbsp;&nbsp;<i class="fa fa-caret-down"></i>');
 
 document.addEventListener('visibilitychange', function() {
-    document.title = document.hidden ? "看这里，看这里!": "蜀山客|今古渔樵风里，江山水墨图中";
+    document.title = document.hidden ? "看这里，看这里!": "蜀山客|今古渔樵话里，江山水墨图中";
 });

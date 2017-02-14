@@ -177,44 +177,37 @@ function comment_mail_notify($comment_id){
     $parent_id = $comment->comment_parent ? $comment->comment_parent : '';
     $spam_confirmed = $comment->comment_approved;
     if(($parent_id != '') && ($spam_confirmed != 'spam')){
-    $wp_email = 'webmaster@' . preg_replace('#^www\.#', '', strtolower($_SERVER['SERVER_NAME']));
-    $to = trim(get_comment($parent_id)->comment_author_email);
-    $subject = '你在 [' . get_option("blogname") . '] 的留言有了回应';
-    $message = '
-    <table border="1" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse; border-style: solid; border-width: 1;border-color:#ddd;">
-	<tbody>
-          <tr>
-            <td>
-				<table align="center" border="0" cellpadding="0" cellspacing="0" width="600" height="48" >
-                    <tbody><tr>
-                        <td width="100" align="center" style="border-right:1px solid #ddd;">
-                            <a href="'.home_url().'/" target="_blank">'. get_option("blogname") .'</a></td>
-                        <td width="300" style="padding-left:20px;"><strong>您有一条来自 <a href="'.home_url().'" target="_blank" style="color:#6ec3c8;text-decoration:none;">' . get_option("blogname") . '</a> 的回复</strong></td>
-						</tr>
-					</tbody>
-				</table>
-			</td>
-          </tr>
-          <tr>
-            <td  style="padding:15px;"><p><strong>' . trim(get_comment($parent_id)->comment_author) . '</strong>, 你好!</span>
-              <p>你在《' . get_the_title($comment->comment_post_ID) . '》的留言:</p><p style="border-left:3px solid #ddd;padding-left:1rem;color:#999;">'
-        . trim(get_comment($parent_id)->comment_content) . '</p><p>
-              ' . trim($comment->comment_author) . ' 给你的回复:</p><p style="border-left:3px solid #ddd;padding-left:1rem;color:#999;">'
-        . trim($comment->comment_content) . '</p>
-        <center ><a href="' . htmlspecialchars(get_comment_link($parent_id)) . '" target="_blank" style="background-color:#6ec3c8; border-radius:10px; display:inline-block; color:#fff; padding:15px 20px 15px 20px; text-decoration:none;margin-top:20px; margin-bottom:20px;">点击查看完整内容</a></center>
-</td>
-          </tr>
-          <tr>
-            <td align="center" valign="center" height="38" style="font-size:0.8rem; color:#999;">Copyright © '.get_option("blogname").'</td>
-          </tr>
-		  </tbody>
-  </table>';
-    $from = "From: \"" . get_option('blogname') . "\" <$wp_email>";
-    $headers = "$from\nContent-Type: text/html; charset=" . get_option('blog_charset') . "\n";
-    wp_mail( $to, $subject, $message, $headers );
-  }
+        $wp_email = 'webmaster@' . preg_replace('#^www\.#', '', strtolower($_SERVER['SERVER_NAME']));
+        $to = trim(get_comment($parent_id)->comment_author_email);
+        $subject = '您在 [' . get_option("blogname") . '] 的留言有了回应';
+
+        $message = '<div style="border-right:#666666 1px solid;border-radius:8px;color:#111;font-size:14px;width:600px;border-bottom:#666666 1px solid;font-family:微软雅黑,arial;margin:10px auto 0px;border-top:#666666 1px solid;border-left:#666666 1px solid">
+            <div style="width:100%;background:#666666;min-height:60px;color:white;border-radius:6px 6px 0 0" align="center" valign="center">
+                <span style="line-height:60px;min-height:60px;font-size:16px">您在
+                <a style="color:#6ec3c8;font-weight:600;text-decoration:none" href="' . get_option('home') . '" target="_blank">' . get_option('blogname') . '</a> 的留言有了回应</span>
+            </div>
+            <div style="margin:0px auto;width:90%">
+                <p>' . trim(get_comment($parent_id)->comment_author) . ', 您好!</p>
+                <p>您于' . trim(get_comment($parent_id)->comment_date) . ' 在文章《' . get_the_title($comment->comment_post_ID) . '》上发表评论: </p>
+                <p style="border-bottom:#ddd 1px solid;border-left:#ddd 1px solid;padding-bottom:10px;background-color:#eee;margin:15px 0px;padding-left:20px;padding-right:20px;border-top:#ddd 1px solid;border-right:#ddd 1px solid;padding-top:10px">' . nl2br(get_comment($parent_id)->comment_content) . '</p>
+                <p>' . trim($comment->comment_author) . ' 于' . trim($comment->comment_date) . ' 给您的回复如下: </p>
+                <p style="border-bottom:#ddd 1px solid;border-left:#ddd 1px solid;padding-bottom:10px;background-color:#eee;margin:15px 0px;padding-left:20px;padding-right:20px;border-top:#ddd 1px solid;border-right:#ddd 1px solid;padding-top:10px">' . nl2br($comment->comment_content) . '</p>
+                <center ><a href="' . htmlspecialchars(get_comment_link($parent_id)) . '" target="_blank" style="background-color:#6ec3c8; border-radius:10px; display:inline-block; color:#fff; padding: 10px 15px 10px 15px; text-decoration:none;margin-top:15px; margin-bottom:15px; font-size: 16px;">点击查看完整内容</a></center>
+                <p style="border-top:1px dashed #dbd1ce; margin-bottom: 0px;"></p>
+                <p style=" color: #b2b0b0; margin-bottom: 20px; margin-top: 5px;">此邮件由系统自动发出, 请勿回复</p>
+            </div>
+            <div style="width:100%;background: #f6f8fa;min-height: 45px;color: #9f9d9d;border-radius: 0 0 6px 6px;"  align="center" valign="center">
+                <span style="line-height: 45px;min-height: 45px;margin-left:30px;font-size: 13px;">Copyright © 2015-2017 '.get_option("blogname").' All Right Reserved</span>
+            </div>
+        </div>';
+
+        $from = "From: \"" . get_option('blogname') . "\" <$wp_email>";
+        $headers = "$from\nContent-Type: text/html; charset=" . get_option('blog_charset') . "\n";
+        wp_mail( $to, $subject, $message, $headers );
+    }
 }
 add_action('comment_post', 'comment_mail_notify');
+
 //面包屑导航
 function cmp_breadcrumbs() {
 	$delimiter = '&gt;'; // 分隔符

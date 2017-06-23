@@ -70,7 +70,7 @@ ul, ol {
 }
 
 li {
-    /*list-style-type: none;*/
+    list-style-type: none;
 }
 
 dt {
@@ -604,6 +604,10 @@ i.fa-caret-down {
 
 .post {
     margin: 3rem auto;
+}
+
+.post li{
+    list-style-type: disc;
 }
 
 .text {

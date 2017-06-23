@@ -415,13 +415,13 @@ add_filter('preprocess_comment', 'comment_post');
              if ($year != $year_tmp && $year > 0) $output .= '</ul>';
              if ($year != $year_tmp) {
                  $year = $year_tmp;
-                 $output .= '<h3 class="al_year" id="'.$year.'">'. $year .' 年</h3><ul class="al_mon_list">'; //输出年份
+                 $output .= '<h3 class="al_year" id="'.$year.'" style="margin-bottom: .5rem">'. $year .' 年</h3><ul class="al_mon_list" style="margin: 0;padding: 0">'; //输出年份
              }
              if ($mon != $mon_tmp) {
                  $mon = $mon_tmp;
-                 $output .= '<h4 class="al_mon">'. $mon .' 月</h4><ul class="al_post_list time_base">'; //输出月份
+                 $output .= '<h4 class="al_mon" style="padding-bottom: .5rem;padding-top: 0rem">'. $mon .' 月</h4><ul class="al_post_list time_base" style="margin: 0;padding: 0">'; //输出月份
              }
-             $output .= '<li class="time_base-l"><span class="time_bm">'. get_the_time('m-d  ') .'</span><span class="time-b-content"><a href="'. get_permalink() .'">'. get_the_title() .'</a> <em>('. get_comments_number('0', '1', '%') .')</em></span></li>'; //输出文章日期和标题
+             $output .= '<li class="time_base-l" style="list-style-type:none"><span class="time_bm">'. get_the_time('m-d  ') .'</span><span class="time-b-content"><a href="'. get_permalink() .'">'. get_the_title() .'</a> <em>('. get_comments_number('0', '1', '%') .')</em></span></li>'; //输出文章日期和标题
          endwhile;
          wp_reset_postdata();
          $output .= '</ul></li></ul></div>';
@@ -462,7 +462,7 @@ if ( !is_admin() ) {
     function qiniu_cdn_replace($html){
         $local_host = 'http://www.zeakhold.com'; //博客域名
         $qiniu_host = 'http://source.zeakhold.com'; //七牛域名
-        $cdn_exts   = 'js|css|png|jpg|jpeg|gif|ico'; //扩展名（使用|分隔）
+        $cdn_exts   = 'js|png|jpg|jpeg|gif|ico'; //扩展名（使用|分隔）
         $cdn_dirs   = 'wp-content|wp-includes'; //目录（使用|分隔）
         $cdn_dirs   = str_replace('-', '\-', $cdn_dirs);
         if ($cdn_dirs) {

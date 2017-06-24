@@ -606,6 +606,10 @@ i.fa-caret-down {
     margin: 3rem auto;
 }
 
+.post ul{
+    margin: 1em 0;
+}
+
 .post li{
     list-style-type: disc;
 }

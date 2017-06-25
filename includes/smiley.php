@@ -33,25 +33,27 @@
     }
 /* ]]> */
 </script>
-<a href="javascript:grin(':?:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_question.gif" alt="" /></a>
-<a href="javascript:grin(':razz:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_razz.gif" alt="" /></a>
-<a href="javascript:grin(':evil:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_evil.gif" alt="" /></a>
-<a href="javascript:grin(':!:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_exclaim.gif" alt="" /></a>
-<a href="javascript:grin(':smile:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_smile.gif" alt="" /></a>
-<a href="javascript:grin(':oops:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_redface.gif" alt="" /></a>
-<a href="javascript:grin(':grin:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_biggrin.gif" alt="" /></a>
-<a href="javascript:grin(':eek:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_surprised.gif" alt="" /></a>
-<a href="javascript:grin(':shock:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_eek.gif" alt="" /></a>
-<a href="javascript:grin(':???:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_confused.gif" alt="" /></a>
-<a href="javascript:grin(':cool:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_cool.gif" alt="" /></a>
-<a href="javascript:grin(':lol:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_lol.gif" alt="" /></a>
-<a href="javascript:grin(':twisted:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_twisted.gif" alt="" /></a>
-<a href="javascript:grin(':roll:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_rolleyes.gif" alt="" /></a>
-<a href="javascript:grin(':wink:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_wink.gif" alt="" /></a>
-<a href="javascript:grin(':idea:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_idea.gif" alt="" /></a>
-<a href="javascript:grin(':arrow:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_arrow.gif" alt="" /></a>
-<a href="javascript:grin(':neutral:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_neutral.gif" alt="" /></a>
-<a href="javascript:grin(':cry:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_cry.gif" alt="" /></a>
-<a href="javascript:grin(':mrgreen:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_mrgreen.gif" alt="" /></a>
+<a href="javascript:grin(':arrow:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_arrow.png" alt="" /></a>
+<a href="javascript:grin(':biggrin:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_biggrin.png" alt="" /></a>
+<a href="javascript:grin(':confused:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_confused.png" alt="" /></a>
+<a href="javascript:grin(':cool:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_cool.png" alt="" /></a>
+<a href="javascript:grin(':cry:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_cry.png" alt="" /></a>
+<a href="javascript:grin(':eek:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_eek.png" alt="" /></a>
+<a href="javascript:grin(':evil:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_evil.png" alt="" /></a>
+<a href="javascript:grin(':exclaim:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_exclaim.png" alt="" /></a>
+<a href="javascript:grin(':idea:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_idea.png" alt="" /></a>
+<a href="javascript:grin(':lol:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_lol.png" alt="" /></a>
+<a href="javascript:grin(':mad:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_mad.png" alt="" /></a>
+<a href="javascript:grin(':mrgreen:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_mrgreen.png" alt="" /></a>
+<a href="javascript:grin(':neutral:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_neutral.png" alt="" /></a>
+<a href="javascript:grin(':question:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_question.png" alt="" /></a>
+<a href="javascript:grin(':razz:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_razz.png" alt="" /></a>
+<a href="javascript:grin(':redface:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_redface.png" alt="" /></a>
+<a href="javascript:grin(':rolleyes:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_rolleyes.png" alt="" /></a>
+<a href="javascript:grin(':sad:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_sad.png" alt="" /></a>
+<a href="javascript:grin(':smile:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_smile.png" alt="" /></a>
+<a href="javascript:grin(':surprised:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_surprised.png" alt="" /></a>
+<a href="javascript:grin(':twisted:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_twisted.png" alt="" /></a>
+<a href="javascript:grin(':wink:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_wink.png" alt="" /></a>
 <br />
 <?php { echo ''; } ?>

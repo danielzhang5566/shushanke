@@ -385,21 +385,26 @@ function remove_width_height_attribute($content){
 } 
 add_filter('the_content', 'remove_width_height_attribute', 99); 
 
+/*
 //评论过滤
 function comment_post( $incoming_comment ) {
+
+    //禁止全英文评论
 	$pattern = '/[一-龥]/u';
-	// 禁止全英文评论
 	if(!preg_match($pattern, $incoming_comment['comment_content'])) {
 		err(__('您的评论中必须包含汉字！'));
 	}
+
+    // 禁止日文评论
 	$pattern = '/[あ-んア-ン]/u';
-	// 禁止日文评论
 	if(preg_match($pattern, $incoming_comment['comment_content'])) {
 		err(__('禁止评论日文！'));
 	}
+
 	return( $incoming_comment );
 }
 add_filter('preprocess_comment', 'comment_post');
+*/
 
  /* Archives list by zwwooooo | http://zww.me */
  function archives_list() {

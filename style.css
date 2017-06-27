@@ -510,6 +510,7 @@ i.fa-caret-down {
     position: relative;
     display: none;
     padding: 0 !important;
+    background: #ffffff;
 }
 
 .menu li ul.sub-menu li {

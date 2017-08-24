@@ -458,4 +458,14 @@ if ( !is_admin() ) {
     }
 }
 
-?>
+//文章结尾添加转载声明
+function add_copyright($content) {
+    global $more;
+    if ($more && (is_single() || is_feed())) {
+        $content .= "<br/><p style='margin: 0;font-size: .875rem;color: #999;border-left: 4px #eee solid;padding-left: 8px;'><span>本文标题：<a href=" . get_permalink() . ">" . get_the_title() . "</a></span><br/><span>转载请注明出处，欢迎分享</span></p>";
+    }
+    return $content;
+}
+add_filter('the_content', 'add_copyright');
+
+

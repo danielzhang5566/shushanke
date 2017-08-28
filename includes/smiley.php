@@ -33,16 +33,17 @@
     }
 /* ]]> */
 </script>
-<a href="javascript:grin(':arrow:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_arrow.png" alt="" /></a>
 <a href="javascript:grin(':biggrin:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_biggrin.png" alt="" /></a>
-<a href="javascript:grin(':confused:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_confused.png" alt="" /></a>
 <a href="javascript:grin(':cool:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_cool.png" alt="" /></a>
+<a href="javascript:grin(':lol:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_lol.png" alt="" /></a>
+<a href="javascript:grin(':arrow:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_arrow.png" alt="" /></a>
+<a href="javascript:grin(':confused:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_confused.png" alt="" /></a>
 <a href="javascript:grin(':cry:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_cry.png" alt="" /></a>
 <a href="javascript:grin(':eek:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_eek.png" alt="" /></a>
+<a href="javascript:grin(':smile:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_smile.png" alt="" /></a>
 <a href="javascript:grin(':evil:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_evil.png" alt="" /></a>
 <a href="javascript:grin(':exclaim:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_exclaim.png" alt="" /></a>
 <a href="javascript:grin(':idea:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_idea.png" alt="" /></a>
-<a href="javascript:grin(':lol:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_lol.png" alt="" /></a>
 <a href="javascript:grin(':mad:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_mad.png" alt="" /></a>
 <a href="javascript:grin(':mrgreen:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_mrgreen.png" alt="" /></a>
 <a href="javascript:grin(':neutral:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_neutral.png" alt="" /></a>
@@ -51,7 +52,6 @@
 <a href="javascript:grin(':redface:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_redface.png" alt="" /></a>
 <a href="javascript:grin(':rolleyes:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_rolleyes.png" alt="" /></a>
 <a href="javascript:grin(':sad:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_sad.png" alt="" /></a>
-<a href="javascript:grin(':smile:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_smile.png" alt="" /></a>
 <a href="javascript:grin(':surprised:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_surprised.png" alt="" /></a>
 <a href="javascript:grin(':twisted:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_twisted.png" alt="" /></a>
 <a href="javascript:grin(':wink:')"><img src="<?php bloginfo('template_url') ?>/smiley/icon_wink.png" alt="" /></a>

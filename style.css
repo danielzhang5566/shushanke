@@ -1203,33 +1203,9 @@ h3#leavecomments {
     position: relative;
     width: 25px;
     height: 25px;
-    margin: 2px 5px;
-
-    transition: .1s transform;
-    -webkit-transition: .1s transform;
-    -ms-transition: .1s transform;
-    -moz-transition: .1s transform;
-    -o-transition: .1s transform;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
-    -moz-transform: translateZ(0);
+    margin: 0;
 }
 
-.smileys a img:hover {
-    transform: scale(2.0, 2.0);
-    transition: .3s transform;
-    -webkit-transform: scale(2.0, 2.0);
-    -webkit-transition: .3s transform;
-    -ms-transform: scale(2.0, 2.0);
-    -ms-transition: .3s transform;
-    -moz-transform: scale(2.0, 2.0);
-    -moz-transition: .3s transform;
-    -o-transform: scale(2.0, 2.0);
-    -o-transition: .3s transform;
-    z-index: 9999;
-}
 
 .comments-list ul li {
     padding-top: 5px;

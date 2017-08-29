@@ -1150,6 +1150,7 @@ h3#comments {
     color: #a1a1a1;
     font-weight: 400;
     font-size: 1rem;
+    padding-left: 10px;
 }
 
 h3#leavecomments {
@@ -1168,7 +1169,7 @@ h3#leavecomments {
 
 .comment-list {
     margin-bottom: 0 !important;
-    padding-left: 0 !important;
+    padding: 0 10px;
 }
 
 #comment-author-info p {
@@ -1191,6 +1192,10 @@ h3#leavecomments {
     margin-bottom: 10px;
     padding: 10px !important;
     background-color: #f9f9f9;
+}
+
+.comment-list p {
+    padding-left: 30px;
 }
 
 .comment-list p img {

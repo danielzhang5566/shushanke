@@ -7,7 +7,7 @@
 		<footer class="site-footer">
 			<div class="site-info" style="line-height: 10px;">
 				Copyright © 2015-2017 <a href="<?php echo home_url();?>"  id="copyright"><?php echo get_bloginfo('name');?></a>
-				 | Theme by <a href="http://zhangshiyu.name" target="_blank">Erl</a>
+				 | Thank <a href="http://zhangshiyu.name" target="_blank">Erl : )</a>
 				<p style="font-size: 13px"><a target="_blank" href="http://www.beian.gov.cn">粤公网安备 44011302000438号</a></p>
 		</div> <!-- .site-info -->
         </footer>

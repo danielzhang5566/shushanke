@@ -11,9 +11,9 @@
 				<p style="font-size: 13px"><a target="_blank" href="http://www.beian.gov.cn">粤公网安备 44011302000438号</a></p>
 		</div> <!-- .site-info -->
         </footer>
-        <script src="http://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/comments-ajax.js"></script>
-		<script src="http://cdn.bootcss.com/tooltipster/3.2.6/js/jquery.tooltipster.min.js"></script>
+		<script src="https://cdn.bootcss.com/tooltipster/3.2.6/js/jquery.tooltipster.min.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/common.js"></script>
         <script type="text/javascript">var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?dadddb77ce27fea5a5096368b7397ce3";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();</script>
 

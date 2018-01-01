@@ -454,6 +454,7 @@ if ( !is_admin() ) {
             $regex  = '/' . str_replace('/', '\/', $local_host) . '\/([^\s\?\\\'\"\;\>\<]{1,}.(' . $cdn_exts . '))([\"\\\'\s\?]{1})/';
             $html =  preg_replace($regex, $qiniu_host . '/$1$3', $html);
         }
+        $html=str_replace('http://source.zeakhold.com/wp-content/themes/shushanke/js/common.js','http://www.zeakhold.com/wp-content/themes/shushanke/js/common.js',$html);
         return $html;
     }
 }

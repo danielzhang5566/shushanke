@@ -20,10 +20,12 @@ $(document).ready(function () {
 
     toggleMenu.on("click", revealMenu);
     var toggleSearch = $(".toggle-search"),
-        inputAndSearch = $(".input-search, .toggle-search");
+        inputAndSearch = $(".input-search, .toggle-search"),
+        searchForm = $(".search-form");
 
     function revealSearch() {
         inputAndSearch.toggleClass("active");
+        searchForm.toggleClass("active");
         $(".input-search.active").focus();
         $(this).find("i").toggleClass("fa-search fa-times");
     }

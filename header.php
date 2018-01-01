@@ -65,7 +65,7 @@
 				}
 				?>
 				
-				<form method="get" id="searchform" action="<?php bloginfo('url'); ?>" class="top_form">
+				<form method="get" action="<?php bloginfo('url'); ?>" class="top_form">
 					<i class="fa fa-search searchpro"></i><input class="input-search-index" type="text" name="s" value="" placeholder="Search……" autocomplete="off"/>
 				</form>
 				<button class="toggle-search tooltip" type="button" title="搜索">
@@ -83,6 +83,6 @@
 			</div>    
 		</nav>
     
-		<form method="get" id="searchform" action="<?php echo home_url();?>/">
-	          <input class="input-search" type="text" name="s" value="" placeholder="输入关键字后按回车键搜索……" autocomplete="off">
+		<form method="get" class="search-form" action="<?php echo home_url();?>/">
+	          <input class="input-search" type="text" name="s" value="" placeholder="输入关键字后按回车键搜索……" autocomplete="off" autofocus>
 		</form>

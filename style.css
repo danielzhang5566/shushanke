@@ -297,14 +297,22 @@ img.avatar {
     background: #FFF;
 }
 
+.search-form.active {
+    top: 48px;
+    right: 0;
+    padding: 2rem 0;
+    width: 100%;
+    height: 100%;
+}
+
 .input-search {
     position: fixed;
-    top: 0;
+    top: 48px;
     right: 0;
     margin: 0;
     padding: 0;
     width: 0;
-    height: 100%;
+    height: 66px;
     outline: 0;
     border: 0;
     border-radius: 0;
@@ -322,8 +330,10 @@ img.avatar {
 
 .input-search.active {
     z-index: 99;
-    padding: 0 1.5rem;
+    padding: 0rem 3rem 0rem;
     width: 100%;
+    height: 80px;
+    border: 4px solid #c5ecc7;
 }
 
 .site-header, .site-header a, .site-header a h1 {
@@ -544,7 +554,6 @@ i.fa-caret-down {
     width: 205px;
     height: 28px;
     border: 0;
-    border-right: 2px solid #ccc;
     background-color: transparent;
     font-size: 14px;
     line-height: 28px;

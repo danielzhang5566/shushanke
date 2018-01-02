@@ -1579,3 +1579,8 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
     background-color: #795548;
 }
+
+/* 文本选中底色 */
+::selection {
+    background: rgba(141, 214, 249, 0.35);
+}

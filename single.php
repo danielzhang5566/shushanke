@@ -49,9 +49,9 @@ if ( has_post_thumbnail() ) :
             </article>
         </div><!-- /.posts-inner -->
             <ul class="single_nav">
-       <li><?php previous_post_link('上一篇：%link','%title',TRUE) ?></li><li>
-<?php next_post_link('下一篇：%link','%title',TRUE) ?></li>
-</ul>
+               <li><?php previous_post_link('上一篇：%link','%title') ?></li>
+               <li><?php next_post_link('下一篇：%link','%title') ?></li>
+            </ul>
     <span class="pre_link"><?php previous_post_link('%link','<i class="fa fa-angle-left fa-4x"> </i>') ?></span>
     <span class="nex_link"><?php next_post_link('%link','<i class="fa fa-angle-right fa-4x"> </i>') ?></span>
 <div class="post-comment">

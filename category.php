@@ -2,7 +2,8 @@
  ?>
  <?php 
  $option=get_option('erlsimple_theme_options');
- if($option['if_catbg']==1):
+ /* 显示第二页以及之后页面时，is_paged()返回TRUE */
+ if($option['if_catbg']==1 && !is_paged()):
  ?>
 <style>
     .nav-bar{ display:none;}
@@ -22,7 +23,7 @@
   <div class="main">
  <div class="content">
  <?php if (have_posts()) : ?> 
-       <div class="crumbs_patch" style="margin-top:1.5rem;">
+       <div class="crumbs_patch">
        <?php if(function_exists('cmp_breadcrumbs')) cmp_breadcrumbs();?>
 </div> <section class="posts">
         <div class="posts-inner">

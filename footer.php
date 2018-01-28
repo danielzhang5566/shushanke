@@ -20,7 +20,8 @@
 		<?php
 		/* 如果是网站首页、分类页面、独立页面时（蜀山客的这三类页面都设置为【有背景图】）*/
         /* 也就是有【有背景图】的情况下 */
-		if (is_home() || is_category() || is_page()):?>
+        /* 显示第二页以及之后页面时，is_paged()返回TRUE */
+		if ((is_home() && !is_paged()) || (is_category() && !is_paged()) || is_page()):?>
 			<script src="<?php bloginfo('template_directory'); ?>/js/jquery.backstretch.min.js"></script>
 			<script type="text/javascript">
                 $(window).scroll(function(){

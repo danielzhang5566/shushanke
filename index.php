@@ -3,7 +3,8 @@ get_header();
 ?>
  <?php 
  $option=get_option('erlsimple_theme_options');
- if($option['if_bg_on']==1):
+ /* 显示第二页以及之后页面时，is_paged()返回TRUE */
+ if($option['if_bg_on']==1 && !is_paged()):
  ?>
  <style>
 .nav-bar{ display:none;}

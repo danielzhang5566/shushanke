@@ -8,7 +8,10 @@
 			<div class="site-info" style="line-height: 10px;">
 				Copyright © 2015-2017 <a href="<?php echo home_url();?>"  id="copyright"><?php echo get_bloginfo('name');?></a>
 				 | Thank <a href="http://zhangshiyu.name" target="_blank">Erl : )</a>
-				<p style="font-size: 13px">粤ICP备16026578号 | <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011302000438">粤公网安备 44011302000438号</a></p>
+				<p style="font-size: 13px">
+				    <a target="_blank" href="http://www.miitbeian.gov.cn">粤ICP备16026578号</a> |
+				    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011302000438">粤公网安备 44011302000438号</a>
+				</p>
 		</div> <!-- .site-info -->
         </footer>
         <script src="https://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>页面不存在 | 蜀山客</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/font-awesome.min.css" />
 //<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/font-awesome.min.css" />
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/tooltipster.css" />
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />

@@ -3,7 +3,7 @@ while (i <= len && got == -1) {
     var js_url = document.getElementsByTagName("script")[i].src, got = js_url.indexOf("comments-ajax.js");
     i++
 };
-js_url = js_url.replace('http://source.susamko.com','http://www.susamko.com');
+js_url = js_url.replace('http://source.shushanke.net','http://www.shushanke.net');
 var edit_mode = "0", ajax_php_url = js_url.replace("-ajax.js", "-ajax.php"), wp_url = js_url.substr(0, js_url.indexOf("wp-content")), pic_sb = wp_url + "wp-admin/images/wpspin_dark.gif", pic_no = wp_url + "wp-admin/images/no.png", pic_ys = wp_url + "wp-admin/images/yes.png", txt1 = '<div id="loading"><i class="fa fa-spinner fa-spin"></i>&nbsp;正在提交中，请稍候...</div>', txt2 = '<div id="error">#</div>', txt3 = '"> <div id="edita"><i class="fa fa-check"></i>&nbsp;评论提交成功', edt1 = ' , 刷新页面之前可以<a rel="nofollow" class="comment-reply-link_a" href="#edit" onclick=\'return addComment.moveForm("', edt2 = ")'>[ 再次编辑 ]</a></div> ", cancel_edit = "[ 取消编辑 ]", edit, num = 1, comm_array = [];
 comm_array.push("");
 jQuery(document).ready(function ($) {

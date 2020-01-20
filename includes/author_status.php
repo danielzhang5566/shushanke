@@ -1,7 +1,7 @@
 
 <aside class="widget">
 	<h3 style="line-height:50px;">
-	<?php 
+	<?php
 	$my_email = get_bloginfo ('admin_email');
 	echo get_avatar($my_email,50);
 	$user=get_user_by( 'email', $my_email );
@@ -10,8 +10,8 @@
 	$qq=get_the_author_meta('qq',$userID);
 	$sina=get_the_author_meta( 'sina_weibo', $userID );
 	$twitter=get_the_author_meta( 'twitter', $userID );
-	$google=get_the_author_meta( 'google_plus', $userID );	
-	$github=get_the_author_meta( 'github', $userID );	
+	$google=get_the_author_meta( 'google_plus', $userID );
+	$github=get_the_author_meta( 'github', $userID );
 	?>
 	<?php echo $user->display_name;?></h3>
 	<i class="fa fa-map-marker  fa-fw"></i>广州
@@ -37,7 +37,7 @@
 		<?php endif;?>
 
 		<?php if(true):?>
-        <a target="_blank" href="http://www.susamko.com/feed" title="订阅" class="tooltip"><i class="fa fa-rss fa-fw"></i></a>
+        <a target="_blank" href="http://www.shushanke.net/feed" title="订阅" class="tooltip"><i class="fa fa-rss fa-fw"></i></a>
         <?php endif;?>
 
 	</div>

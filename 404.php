@@ -17,7 +17,7 @@
 <span style="font-size:5rem; line-height:130px; margin-left:20px; color:#a6d7de; font-size:6rem;">404</span><br />
 <span style="font-size:1.5rem;">抱歉，您查找的页面不存在！</span><br />
 <em style="color:#cecbcb; font-size:1.2rem;">Page Not Found !</em><br />
-<a href="http://www.susamko.com/" style=" color:#333!important; text-shadow:none; font-size:0.8rem;">&lt;&lt;返回蜀山客首页</a></dd></dl>
+<a href="http://www.shushanke.net/" style=" color:#333!important; text-shadow:none; font-size:0.8rem;">&lt;&lt;返回蜀山客首页</a></dd></dl>
         </div><!-- /.site-header-inner -->
     </header>
     <div class="nav-bar">
@@ -25,7 +25,7 @@
             <a href="/" class="logo">
                 <h1>蜀山客</h1>
             </a>
-            
+
             <button class="toggle-menu tooltip" type="button" title="菜单">
                 <i class="fa fa-bars"></i>
             </button>
@@ -67,7 +67,7 @@ if(function_exists('wp_nav_menu')) {
 }
 ?>
 </div>    </nav>
-    
+
 			<form method="get" id="searchform" action="<?php bloginfo('url'); ?>/">
 	          <input class="input-search" type="text" name="s" value="" placeholder="输入关键字后按回车键搜索……" autocomplete="off">
 	</form>

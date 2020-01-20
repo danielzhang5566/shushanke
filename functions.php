@@ -42,20 +42,20 @@ function _add_contact_fields( $contactmethods ) {
 }
 
 //自定义头部功能
-$default_header = array(   
-    'width'=> 2560,   
+$default_header = array(
+    'width'=> 2560,
     'height'=> 1920,
-	'uploads'=> true,   
-);   
-add_theme_support( 'custom-header',$default_header); 
- 
+	'uploads'=> true,
+);
+add_theme_support( 'custom-header',$default_header);
+
 // 评论表情
 function classic_smilies_src( $old, $img ) {
 	return get_bloginfo('template_directory').'/smiley/'.$img;
 }
 
 add_action( 'init', 'classic_smilies_init', 1 );
-	
+
 function classic_smilies_init() {
 
 	// put the classic smilies images back
@@ -86,14 +86,14 @@ function classic_smilies_init() {
 	);
 
 	add_filter( 'smilies_src', 'classic_smilies_src', 10, 2 );
-	
+
 	// disable any and all mention of emoji's
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 	remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 	remove_action( 'wp_print_styles', 'print_emoji_styles' );
-	remove_action( 'admin_print_styles', 'print_emoji_styles' );	
+	remove_action( 'admin_print_styles', 'print_emoji_styles' );
 	remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
-	remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );	
+	remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
 	remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
 	add_filter( 'tiny_mce_plugins', 'classic_smilies_rm_tinymce_emoji' );
 	add_filter( 'the_content', 'classic_smilies_rm_additional_styles', 11 );
@@ -132,12 +132,12 @@ function mytheme_comment($comment, $args, $depth) {
    <div id="div-comment-<?php comment_ID() ?>" class="comment-main">
       <?php $add_below = 'div-comment'; ?>
 		<div class="comment-author vcard">
-<?php 
+<?php
 echo get_avatar( $comment, 50 );?>
 <cite class="fn"><?php comment_author_link() ?></cite><span class="datetime"><?php comment_date('Y-m-d') ?>  <?php comment_time() ?></span><?php edit_comment_link('[编辑]','&nbsp;&nbsp;',''); ?></div>
 		<?php if ( $comment->comment_approved == '0' ) : ?>
 			<span style="color:#C00; font-style:inherit">您的评论正在等待审核中...</span>
-			<br />			
+			<br />
 		<?php endif; ?>
     		<?php comment_text() ?>
  <div class="comment-reply"><?php comment_reply_link(array_merge( $args, array('reply_text' => '[ 回复 ]', 'add_below' =>$add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))); ?></div>
@@ -350,17 +350,17 @@ function remove_width_attribute( $html ) {
 }
 add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
 add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );
-function remove_width_height_attribute($content){ 
-	preg_match_all("/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg|\.png\.bmp]))[\'|\"].*?[\/]?>/", $content, $images); 
-	if(!empty($images)) { 
-		foreach($images[0] as $index => $value){ 
-			$new_img = preg_replace('/(width|height)="\d*"\s/', "", $images[0][$index]); 
-			$content = str_replace($images[0][$index], $new_img, $content); 
-		} 
-	} 
-	return $content; 
-} 
-add_filter('the_content', 'remove_width_height_attribute', 99); 
+function remove_width_height_attribute($content){
+	preg_match_all("/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg|\.png\.bmp]))[\'|\"].*?[\/]?>/", $content, $images);
+	if(!empty($images)) {
+		foreach($images[0] as $index => $value){
+			$new_img = preg_replace('/(width|height)="\d*"\s/', "", $images[0][$index]);
+			$content = str_replace($images[0][$index], $new_img, $content);
+		}
+	}
+	return $content;
+}
+add_filter('the_content', 'remove_width_height_attribute', 99);
 
 /*
 //评论过滤
@@ -414,7 +414,7 @@ add_filter('preprocess_comment', 'comment_post');
  function clear_zal_cache() {
      update_option('archives_list', ''); // 清空 zww_archives_list
  }
- add_action('save_post', 'clear_zal_cache'); // 新发表文章/修改文章时章 
+ add_action('save_post', 'clear_zal_cache'); // 新发表文章/修改文章时章
 if($option['friendlink']==1){
 	//恢复链接功能
 	add_filter( 'pre_option_link_manager_enabled', '__return_true' );
@@ -442,8 +442,8 @@ if ( !is_admin() ) {
         ob_start('qiniu_cdn_replace');
     }
     function qiniu_cdn_replace($html){
-        $local_host = 'http://www.susamko.com'; //博客域名
-        $qiniu_host = 'http://source.susamko.com'; //七牛域名
+        $local_host = 'http://www.shushanke.net'; //博客域名
+        $qiniu_host = 'http://source.shushanke.net'; //七牛域名
         $cdn_exts   = 'js|png|jpg|jpeg|gif|ico'; //扩展名（使用|分隔）
         $cdn_dirs   = 'wp-content|wp-includes'; //目录（使用|分隔）
         $cdn_dirs   = str_replace('-', '\-', $cdn_dirs);
@@ -454,7 +454,7 @@ if ( !is_admin() ) {
             $regex  = '/' . str_replace('/', '\/', $local_host) . '\/([^\s\?\\\'\"\;\>\<]{1,}.(' . $cdn_exts . '))([\"\\\'\s\?]{1})/';
             $html =  preg_replace($regex, $qiniu_host . '/$1$3', $html);
         }
-        $html=str_replace('http://source.susamko.com/wp-content/themes/shushanke/js/common.js','http://www.susamko.com/wp-content/themes/shushanke/js/common.js',$html);
+        $html=str_replace('http://source.shushanke.net/wp-content/themes/shushanke/js/common.js','http://www.shushanke.net/wp-content/themes/shushanke/js/common.js',$html);
         return $html;
     }
 }

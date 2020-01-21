@@ -444,7 +444,7 @@ if ( !is_admin() ) {
     function qiniu_cdn_replace($html){
         $local_host = 'http://www.zeakhold.com'; //博客域名
         $qiniu_host = 'http://source.zeakhold.com'; //七牛域名
-        $cdn_exts   = 'js|png|jpg|jpeg|gif|ico'; //扩展名（使用|分隔）
+        $cdn_exts   = 'js|css|png|jpg|jpeg|gif|svg|ico|woff2|woff|eot|ttf'; //扩展名（使用|分隔）
         $cdn_dirs   = 'wp-content|wp-includes'; //目录（使用|分隔）
         $cdn_dirs   = str_replace('-', '\-', $cdn_dirs);
         if ($cdn_dirs) {

@@ -442,8 +442,8 @@ if ( !is_admin() ) {
         ob_start('qiniu_cdn_replace');
     }
     function qiniu_cdn_replace($html){
-        $local_host = 'http://www.shushanke.net'; //博客域名
-        $qiniu_host = 'http://source.shushanke.net'; //七牛域名
+        $local_host = 'http://www.zeakhold.com'; //博客域名
+        $qiniu_host = 'http://source.zeakhold.com'; //七牛域名
         $cdn_exts   = 'js|png|jpg|jpeg|gif|ico'; //扩展名（使用|分隔）
         $cdn_dirs   = 'wp-content|wp-includes'; //目录（使用|分隔）
         $cdn_dirs   = str_replace('-', '\-', $cdn_dirs);
@@ -454,7 +454,7 @@ if ( !is_admin() ) {
             $regex  = '/' . str_replace('/', '\/', $local_host) . '\/([^\s\?\\\'\"\;\>\<]{1,}.(' . $cdn_exts . '))([\"\\\'\s\?]{1})/';
             $html =  preg_replace($regex, $qiniu_host . '/$1$3', $html);
         }
-        $html=str_replace('http://source.shushanke.net/wp-content/themes/shushanke/js/common.js','http://www.shushanke.net/wp-content/themes/shushanke/js/common.js',$html);
+        $html=str_replace('http://source.zeakhold.com/wp-content/themes/shushanke/js/common.js','http://www.zeakhold.com/wp-content/themes/shushanke/js/common.js',$html);
         return $html;
     }
 }

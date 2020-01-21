@@ -37,7 +37,7 @@
 		<?php endif;?>
 
 		<?php if(true):?>
-        <a target="_blank" href="http://www.shushanke.net/feed" title="订阅" class="tooltip"><i class="fa fa-rss fa-fw"></i></a>
+        <a target="_blank" href="http://www.zeakhold.com/feed" title="订阅" class="tooltip"><i class="fa fa-rss fa-fw"></i></a>
         <?php endif;?>
 
 	</div>

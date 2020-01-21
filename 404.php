@@ -17,7 +17,7 @@
 <span style="font-size:5rem; line-height:130px; margin-left:20px; color:#a6d7de; font-size:6rem;">404</span><br />
 <span style="font-size:1.5rem;">抱歉，您查找的页面不存在！</span><br />
 <em style="color:#cecbcb; font-size:1.2rem;">Page Not Found !</em><br />
-<a href="http://www.shushanke.net/" style=" color:#333!important; text-shadow:none; font-size:0.8rem;">&lt;&lt;返回蜀山客首页</a></dd></dl>
+<a href="http://www.zeakhold.com/" style=" color:#333!important; text-shadow:none; font-size:0.8rem;">&lt;&lt;返回蜀山客首页</a></dd></dl>
         </div><!-- /.site-header-inner -->
     </header>
     <div class="nav-bar">

@@ -8,7 +8,7 @@
 			<div class="site-info" style="line-height: 10px;">
 				Copyright © 2015-2017 <a href="<?php echo home_url();?>"  id="copyright"><?php echo get_bloginfo('name');?></a>
 				 | Thank <a href="http://zhangshiyu.name" target="_blank">Erl : )</a>
-				<p style="font-size: 13px"><a href="http://www.zeakhold.com">粤ICP备16026578号</a></p>
+				<p style="font-size: 13px"><a href="https://beian.miit.gov.cn">粤ICP备16026578号</a></p>
 		</div> <!-- .site-info -->
         </footer>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
